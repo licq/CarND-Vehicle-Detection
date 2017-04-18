@@ -82,7 +82,7 @@ Here's a [link to my video result](./project_output_video.mp4)
 
 I implemented the sliding window technique on each frame of the video, and added windows with prediction = True to the heatmap. To speed up the process a little bit I used 2 different window scales only.
 
-The generated heatmaps often had false positive predictions. To reduce these I summed the heatmaps over the last 20 frames and used thresholding to get less false positives. I set a minimum size for the bounding boxes. This reduced false positives too.
+The generated heatmaps often had false positive predictions. To reduce these I summed the heatmaps over the last 5 frames and used thresholding to get less false positives. I set a minimum size for the bounding boxes. This reduced false positives too.
 
 
 ---
